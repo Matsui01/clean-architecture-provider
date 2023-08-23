@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter Clean Architecture Bloc',
+      title: 'Flutter Clean Architecture Provider',
       theme: AppTheme.light,
       routerConfig: _appRouter.config(),
     );
