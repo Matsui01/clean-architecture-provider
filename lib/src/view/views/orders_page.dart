@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:clean_architecture_provider/src/presentation/providers/base/base_state.dart';
+import 'package:clean_architecture_provider/src/view/providers/base/base_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -66,6 +66,10 @@ class _OrdersPageState extends State<OrdersPage> {
           return ListTile(
             title: Text('${orders[index].description ?? ''} ${orders[index].id} 😀'),
             onTap: () {},
+            leading: IconButton(
+              icon: const Icon(Icons.delete),
+              onPressed: () => context.read<OrdersProvider>().removeOrder(order: orders[index]),
+            ),
           );
         },
       ),

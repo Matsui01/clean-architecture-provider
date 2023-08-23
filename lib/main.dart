@@ -5,7 +5,7 @@ import 'src/config/router/app_router.dart';
 import 'src/config/themes/app_themes.dart';
 import 'src/domain/repositories/order_repository.dart';
 import 'src/locator.dart';
-import 'src/presentation/providers/orders_provider.dart';
+import 'src/view/providers/orders_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

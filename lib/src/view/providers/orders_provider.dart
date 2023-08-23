@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:clean_architecture_provider/src/presentation/providers/base/base_provider.dart';
+import 'package:clean_architecture_provider/src/view/providers/base/base_provider.dart';
 
 import '../../domain/models/order.dart';
 import '../../domain/repositories/order_repository.dart';
